@@ -7,12 +7,21 @@
 
 <script>
 
-let item = ""	
-function openingChecklist (){};
-function checklistItem (item,action){
-	item === true && action === true ? item = "Correct" : item = "Incorrect"
-};
-console.log(item); 
+//function checks if item and actoin corresponds
+let match = "";
+
+//The checlistItem function has to be executed for every item and return "Correct"  befor openingChecklist can return truth	
+//function openingChecklist(item1, item2 ..........) {
+  function checklistItem(item, action) {
+    return item === true && action === true
+      ? result = "Correct"
+      : result = "Incorrect";
+  }
+//}
+
+//openingChecklist();
+checklistItem(true, false);
+console.log(result);
 
 </script> 
 
